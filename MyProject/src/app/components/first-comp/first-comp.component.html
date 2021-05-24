@@ -1,0 +1,6 @@
+<button id="login_button" (click)="this.logIn()">Авторизация</button><br><br>
+<button id="add_course_button" routerLink="/add_lesson">Добавить компанию</button><br><br>
+
+<div *ngFor="let lesson of lessons">
+    <a routerLink="/content" (click)="this.lessonService.setLessonId(lesson.id)">{{lesson.title}}</a>
+</div>
